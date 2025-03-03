@@ -77,7 +77,7 @@ cd EfficientOCF
 ### nuScenes dataset
 * Please link your [nuScenes V1.0 full dataset](https://www.nuscenes.org/nuscenes#download) to the data folder. 
 * [nuScenes-Occupancy](https://drive.google.com/file/d/1vTbgddMzUN6nLyWSsCZMb9KwihS7nPoH/view?usp=sharing), [nuscenes_occ_infos_train.pkl](https://github.com/JeffWang987/OpenOccupancy/releases/tag/train_pkl), and [nuscenes_occ_infos_val.pkl](https://github.com/JeffWang987/OpenOccupancy/releases/tag/val_pkl) are also provided by the previous work.
-* [test_ids](https://drive.google.com/drive/folders/1O2nWOfpowNkad7_yq_Az2kKNnQ0HeeIu?usp=drive_link) are also needed for nuScenes dataset.
+* [test_ids](https://drive.google.com/drive/folders/1O2nWOfpowNkad7_yq_Az2kKNnQ0HeeIu?usp=drive_link) are also predefined for nuScenes dataset.
 
 ### Lyft dataset
 * Please link your [Lyft dataset](https://www.kaggle.com/c/3d-object-detection-for-autonomous-vehicles/data) to the data folder.
