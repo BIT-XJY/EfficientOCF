@@ -24,7 +24,7 @@ If you use EfficientOCF in an academic work, please cite our paper:
 
 <details>
 	
-<summary>We follow the installation instructions of our codebase Cam4DOcc, which are also posted here
+<summary>We follow the installation instructions of our codebase [Cam4DOcc](https://github.com/haomo-ai/Cam4DOcc), which are also posted here
 </summary>
 
 * Create a conda virtual environment and activate it
@@ -68,8 +68,6 @@ pip install lyft_dataset_sdk # for lyft dataset
 ```
 git clone git@github.com:BIT-XJY/EfficientOCF.git
 cd EfficientOCF
-export PYTHONPATH=“.”
-python setup.py develop
 ```
 
 </details>
@@ -79,11 +77,11 @@ python setup.py develop
 ### nuScenes dataset
 * Please link your [nuScenes V1.0 full dataset](https://www.nuscenes.org/nuscenes#download) to the data folder. 
 * [nuScenes-Occupancy](https://drive.google.com/file/d/1vTbgddMzUN6nLyWSsCZMb9KwihS7nPoH/view?usp=sharing), [nuscenes_occ_infos_train.pkl](https://github.com/JeffWang987/OpenOccupancy/releases/tag/train_pkl), and [nuscenes_occ_infos_val.pkl](https://github.com/JeffWang987/OpenOccupancy/releases/tag/val_pkl) are also provided by the previous work.
-* [test_ids](https://drive.google.com/drive/folders/1O2nWOfpowNkad7_yq_Az2kKNnQ0HeeIu?usp=drive_link) is also need.
+* [test_ids](https://drive.google.com/drive/folders/1O2nWOfpowNkad7_yq_Az2kKNnQ0HeeIu?usp=drive_link) are also needed for nuScenes dataset.
 
 ### Lyft dataset
 * Please link your [Lyft dataset](https://www.kaggle.com/c/3d-object-detection-for-autonomous-vehicles/data) to the data folder.
-* The required folders are listed below.
+* The required folders are listed below:
 
 ```bash
 EfficientOCF
@@ -126,7 +124,7 @@ We directly integrate the EfficientOCF dataset generation pipeline into the data
 
 ### Train with 8 GPUs
 
-For the nuScenes dataset, please run
+For the nuScenes or nuScenes-Occupancy datasets, please run
 
 ```bash
 bash run.sh ./projects/configs/baselines/EfficientOCF_V1.1.py 8
@@ -146,13 +144,11 @@ If you only want to test the performance of occupancy prediction for the present
 bash run_eval.sh $PATH_TO_CFG $PATH_TO_CKPT $GPU_NUM
 # e.g. bash run_eval.sh ./projects/configs/baselines/EfficientOCF_V1.1.py ./work_dirs/EfficientOCF_V1.1/epoch_15.pth  8
 ```
-Please set `save_pred` and `save_path` in the config files once saving prediction results is needed.
-
-
+Please set `save_pred` and `save_path` in the config files once saving prediction results are needed.
 
 ## Basic Information
 
-Some basic information as well as key parameters for our current version.
+Here is some basic information and key parameters for EfficientOCF.
 
 | Type |  Info | Parameter |
 | :----: | :----: | :----: |
