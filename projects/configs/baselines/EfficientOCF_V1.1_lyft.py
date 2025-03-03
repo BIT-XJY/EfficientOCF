@@ -27,8 +27,8 @@ depth_gt_path = " "
 train_ann_file = " "
 val_ann_file = " "
 
-ocf_dataset_path = "./data/cam4docc/"
-idx_root = './data/cam4docc/'
+ocf_dataset_path = "./data/efficientocf/"
+idx_root = './data/efficientocf/'
 
 # your Lyft-level5 dataset
 nusc_root = "xxx/data/lyft/"
