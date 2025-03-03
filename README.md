@@ -24,7 +24,7 @@ If you use EfficientOCF in an academic work, please cite our paper:
 
 <details>
 	
-<summary>We follow the installation instructions of our codebase [Cam4DOcc](https://github.com/haomo-ai/Cam4DOcc), which are also posted here
+<summary>We follow the installation instructions of our codebase Cam4DOcc, which are also posted here
 </summary>
 
 * Create a conda virtual environment and activate it
